@@ -16,3 +16,5 @@ cypress/screenshots/
 cypress/videos/
 
 #report files
+
+cypress.env.json/
