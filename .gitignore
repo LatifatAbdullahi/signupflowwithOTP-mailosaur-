@@ -18,7 +18,7 @@ cypress/videos/
 #report files
 
 cypress.env.json/
-cypress/fixtures/creds.json/
+cypress/fixtures/creds.json
 
 /cypress/fixtures/creds.json
 /cypress.env.json
