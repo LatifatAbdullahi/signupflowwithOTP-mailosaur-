@@ -45,7 +45,7 @@ Cypress.Commands.add('typeInAnyValue', (field, text) =>{
      cy.get('#scrollableDiv').contains(text).click()
         
      })
-     Cypress.Commands.add('typeInBasicDetails', ()=>{
+     Cypress.Commands.add('typeInBasicDetailsAndRegNumber', ()=>{
         const inputs =  [
             faker.person.fullName(),
             faker.company.buzzNoun(),
@@ -65,8 +65,8 @@ Cypress.Commands.add('typeInAnyValue', (field, text) =>{
 
     Cypress.Commands.add('typeInBasicDetails', ()=>{
        cy.typeInAnyValue(signup.fullnameField, faker.person.fullName()) 
-       cy.typeInAnyValue(signup.businessNameField, faker.company.buzNoun())
-       cy.typeInAnyValue(signup.businessEmailField, email.emailAddress())
+       cy.typeInAnyValue(signup.businessNameField, faker.company.buzzNoun())
+       cy.typeInAnyValue(signup.businessEmailField, email.emailAddress)
        cy.typeInAnyValue(signup.businessPhoneField, faker.phone.number({style: 'international'}))
    
     })
@@ -96,7 +96,7 @@ Cypress.Commands.add('typeInAnyValue', (field, text) =>{
     })
 })
 
-Cypress.Commands.add('fillingAnyOptionalField', (option)=>{
+Cypress.Commands.add('fillinAnyOptionalField', (option)=>{
 if (option === 'business registeration'){
     cy.typeInAnyValue(signup.businessRegNumField, '6543526')
     cy.clickAnyButtonwithText('Next')

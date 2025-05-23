@@ -3,7 +3,7 @@ describe('Optional Field flow', () => {
     it('Sign up with twitter and website', () => {
       
         cy.typeInBasicDetails()
-        cy.fillingAnyOptionalField('website')
+        cy.fillinAnyOptionalField('website')
         cy.clickHowYouHeardAboutUsDropdown('Twitter') 
         cy.typeInPassword()
         cy.submitSignUp()
@@ -14,7 +14,7 @@ describe('Optional Field flow', () => {
     
   it.only('Sign up with Instagram', () => {
     cy.typeInBasicDetails()
-     cy.fillingAnyOptionalField('website')
+     cy.fillinAnyOptionalField('website')
     cy.clickHowYouHeardAboutUsDropdown('Instagram') 
     cy.typeInPassword()
     cy.submitSignUp()
@@ -25,7 +25,7 @@ describe('Optional Field flow', () => {
     it('Sign up with Twitter', () => {
     
       cy.typeInBasicDetails()
-       cy.fillingAnyOptionalField('website')
+       cy.fillinAnyOptionalField('website')
       cy.clickHowYouHeardAboutUsDropdown('Twitter') 
       cy.typeInPassword()
       cy.submitSignUp()
